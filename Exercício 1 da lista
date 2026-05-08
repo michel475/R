@@ -1,0 +1,21 @@
+massa <- c(82.0,91.0,100.0,68.0,87.0,73.0,78.0,80.0,65.0,84.0,116.0,76.0,97.0,100.0,105.0,77.0,73.0,78.0) #carregando os dados da variável dependente (y) em um vetor
+idade <- c(71.0,64.0,43.0,67.0,56.0,73.0,68.0,56.0,76.0,65.0,45.0,58.0,45.0,53.0,49.0,78.0,73.0,68.0) #carregando os dados da variável independente (x) em um vetor
+dados <- data.frame(massa, idade) #transformando os dados em um dataframe para manipulacao posteriormente posso usar o train_test_split do python, pelo menos algo em torno do conceito
+y <- massa
+x <- idade
+xy <- x*y
+xy
+xA2 <- x ^ 2
+xA2
+yA2 <- y ^ 2
+yA2
+dados^2
+r <- (18 * sum(xy) - (sum(x)*sum(y)))/sqrt((18*sum(x^2)-sum(x)^2) * (18*sum(y^2)-sum(y)^2)) #calculo do coeficiente de correlação de Pearson
+r
+b <- (18 * sum(xy) - (sum(x)*sum(y)))/((18*(sum(x^2))) - (sum(x)^2)) #cálculo da inclinação da reta
+b
+a <- mean(y) - b*mean(x) #cálculo do y-intercept, ou ponto de intersecção com a variável y
+a
+
+estimativa <- a + b*50 #estimando a massa de uma melhor de 50 anos como dito no enunciado.
+estimativa
