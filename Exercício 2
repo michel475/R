@@ -1,0 +1,27 @@
+x <- c(3,5)
+y <- c(39,35)
+
+dados <- data.frame(x, y)
+dados
+
+xy <- dados['x']*dados['y']
+xy
+
+xA2 <- dados['x']^2
+yA2 <- dados['y']^2
+
+b <- (2 * sum(xy) - (sum(x)*sum(y)))/((2*(sum(x^2))) - (sum(x)^2))
+b
+a <- mean(y)-b*mean(x)
+a
+
+
+valor1 <- a + b*8
+valor2 <- a + b*18
+valor3 <- a + b*21
+valor1
+(21 - a)/b
+(19 - a)/b
+(15 - a)/b
+valor2
+valor3
