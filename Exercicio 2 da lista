@@ -1,0 +1,12 @@
+x <- (6.4,9.9,15.1,27.7,34.8)
+y <- (14.3,15.7,17.9,19.1,22.3)
+dados <- data.frame(x,y)
+
+xy <- dados['x']*dados['y']
+xSQ <- dados['x']^2
+ySQ <- dados['y']^2
+n <- nrow(dados)
+
+r <- (n*sum(xy) - (sum(x)*sum(y)))/(sqrt((n*sum(x^2)-sum(x)^2) * (n*sum(y^2)-sum(y)^2))
+b <- (n*sum(xy) - (sum(x)*sum(y)))/(n*sum(x^2)-sum(x)^2)
+a <- mean(y) - b*mean(x)
