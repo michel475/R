@@ -1,0 +1,30 @@
+x <- c(4, 8, 10, 12, 15, 16, 19, 21, 24)
+y <- c(6, 28, 18, 22, 52, 55, 42, 47, 75)
+dados <- data.frame(x, y)
+
+#printando os dados
+print(dados)
+
+xy <- x*y # ou xy <- dados[['x']]%*%dados[['y']]
+print(xy)
+
+xSQ <- dados[['x']]^2
+print(xSQ)
+
+ySQ <- dados[['y']]^2
+print(ySQ)
+
+n <- nrow(dados)
+print(n)
+
+#coeficiente de correlação de Pearson R
+r <- (n * sum(xy)-(sum(dados[['x']]*sum(dados[['y']]))))/sqrt((n*sum(x^2)-sum(x)^2) * (n*sum(y^2) - sum(y)^2))
+print(r)
+
+#
+b <- (n * sum(xy)-(sum(dados[['x']]*sum(dados[['y']]))))/(n*sum(x^2)-sum(x)^2)
+print(b)
+
+#
+a <- mean(dados[['y']]) - b*mean(dados[['x']])
+print(a)
