@@ -1,0 +1,8 @@
+load <- read.table("C:\\Users\\ueg\\Desktop\\teste.csv", header=T, sep=',', dec='.')
+
+dados <- data.frame(load)
+dados
+
+#o arquivo é basicamente um txt contendo. A partir desse ponto somente salve em formato csv e tente importar ele no R que ele vai reconhecer
+4,6
+8,28
