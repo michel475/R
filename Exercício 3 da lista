@@ -1,0 +1,8 @@
+dados3 <- read.csv('C:\\michel_workspace\\q3.csv')
+View(dados3)
+
+plot(dados3)
+
+modelo3 <- lm(dados3$y ~ dados3$x, dados3)
+coefficients(modelo3)
+abline(modelo3)
