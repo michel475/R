@@ -1,0 +1,19 @@
+setwd('C:\\Users\\ueg\\Desktop\\mm\\studentdataset')
+dados <- read.csv('student_performance_dataset.csv')
+View(dados)
+
+ai_use <- dados$ai_tool_usage_hours
+gaming_hours <- dados$gaming_hours
+gender <- dados$gender
+
+View(data.frame(ai_use, gaming_hours))
+boxplot(data.frame(ai_use,gaming_hours))
+dataset <- data.frame(ai_use,gaming_hours, gender)
+View(dataset)
+summary(dataset)
+library("dplyr")
+
+dataset |>
+  select(ai_use, gaming_hours, gender) |>
+  group_by(gender) |>
+  mutate(ai_use > 1.539 ~ "alto", ai_use == 1.539 ~ 'Medio', ai_use < 1.539 ~ 'Baixo')
