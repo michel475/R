@@ -1,0 +1,12 @@
+#para calcular o dms em varíavel contínua é necessário pegar a média do mesmo jeito dos dados contínuos
+
+intervalos_inf <- c(70,120,170,220,270,320) #tem que extrair o ponto médio, por isso pega o intervalo inferior e superior
+intervalos_sup <- c(120,170,220,270,320,370)
+xi <- (intervalos_inf + intervalos_sup) / 2 #extraindo os pontos médios que se dá pela formula === > (lim_INF + lim_SUP) / 2
+
+fi <- c(8,28,54,32,12,6) #esse aqui é somente o fi, nada fora do normal
+
+media <- sum(xi*fi)/sum(fi) #extraindo a média que é fazendo fi*xi / total em que xi é o ponto médio
+media
+dms <- sum(abs(xi-media)*fi)/sum(fi)
+dms
