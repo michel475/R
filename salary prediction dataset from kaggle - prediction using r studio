@@ -1,0 +1,8 @@
+dados <- Salary_dataset
+View(dados)
+plot(dados)
+
+
+model <- lm(dados$Salary ~ dados$YearsExperience, dados)
+coefficients(model)
+abline(model)
