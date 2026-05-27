@@ -1,0 +1,7 @@
+#exercício 3 lista variância e desvio padrão
+Z <- c(15,16,17,20,21)
+
+#o exercício pede a variancia e desvio padrao AMOSTRAL
+variancia <- round(var(Z), digits=2)
+desvioPadrao <- sqrt(variancia)
+desvioPadrao <- round(desvioPadrao, digits = 2)
