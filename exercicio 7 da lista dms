@@ -1,0 +1,16 @@
+#para extrair o ponto médio
+linf <- c(70,120,170,220,270,320)
+lsup <- c(120,170,220,270,320,370)
+
+#calculo do ponto medio
+xi <- (linf+lsup)/2
+fi <- c(8,28,54,32,12,6)
+dados <- data.frame(xi,fi)
+View(dados)
+
+#extraindo a média
+dados$fixi <- dados$fi * dados$xi
+media <- sum(dados$fixi)/sum(dados$fi)
+print(media)
+
+dms <- round(sum(abs(dados$xi-media)*dados$fi)/sum(dados$fi), digits=2)
