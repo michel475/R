@@ -9,3 +9,5 @@ desvioPadrao <- round(desvioPadrao, digits = 2)
 
 #A função round() leva como argumento o rol e a quantidade de casas que deseja
 #round(x, digits = {numero de casas})
+#x é o número o qual sofrerá a operação, mas é uma boa prática fazer somente um
+x <- round(x, digits=2) #por exemplo, usar a atribuição para que x receba o valor arredondado desejado
