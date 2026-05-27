@@ -1,0 +1,7 @@
+#exercício 2 lista variância e desvio padrão
+Y <- c(5,12,4,20,13,17)
+
+#o exercício pede a variancia e desvio padrao populacional
+variancia <- round(var(Y)*(length(Y)-1)/length(Y), digits=2)
+desvioPadrao <- sqrt(variancia)
+desvioPadrao <- round(desvioPadrao, digits = 2)
