@@ -1,3 +1,4 @@
+#versao usando model pronto
 dados <- Salary_dataset
 View(dados)
 plot(dados)
@@ -6,3 +7,19 @@ plot(dados)
 model <- lm(dados$Salary ~ dados$YearsExperience, dados)
 coefficients(model)
 abline(model)
+
+#versao na mao
+
+cor(dados$YearsExperience, dados$Salary)
+
+dados$XY <- dados$YearsExperience*dados$Salary
+dados$X2 <- dados$YearsExperience^2
+dados$Y2 <- dados$Salary^2
+n <- nrow(dados)
+r <- (n*sum(dados$XY) - sum(dados$YearsExperience)*sum(dados$Salary)) / sqrt((n*sum(dados$X2)-sum(dados$YearsExperience)^2)*(n*sum(dados$Y2)-sum(dados$Salary)^2))
+
+b <- (n*sum(dados$XY) - sum(dados$YearsExperience)*sum(dados$Salary))/(n*sum(dados$X2)-sum(dados$YearsExperience)^2)
+print(b)
+a <- mean(dados$Salary) - b*mean(dados$YearsExperience)
+print(a)
+print(a)
