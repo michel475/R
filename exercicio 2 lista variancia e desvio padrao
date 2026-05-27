@@ -5,3 +5,7 @@ Y <- c(5,12,4,20,13,17)
 variancia <- round(var(Y)*(length(Y)-1)/length(Y), digits=2)
 desvioPadrao <- sqrt(variancia)
 desvioPadrao <- round(desvioPadrao, digits = 2)
+
+
+#A função round() leva como argumento o rol e a quantidade de casas que deseja
+#round(x, digits = {numero de casas})
