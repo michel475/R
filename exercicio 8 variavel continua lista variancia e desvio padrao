@@ -1,0 +1,13 @@
+#exercício 8 lista variância e desvio padrão
+#o exercício pede a variancia e desvio padrao da *amostra*, veio em distribuição de frequencia com intervalo
+#variável contínua
+linf <- c(150,160,170,180,190,200)
+lsup <- c(160,170,180,190,200,210)
+
+xi <- (linf+lsup)/2
+fi <- c(2,15,18,18,16,1)
+fixi <- xi*fi
+media <- sum(fixi)/sum(fi)
+
+variancia <- round(sum((xi-media)^2*fi)/(sum(fi)-1), digits=2)
+desvioPadrao <- round(sqrt(variancia), digits=2)
