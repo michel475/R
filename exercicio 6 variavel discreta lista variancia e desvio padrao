@@ -1,0 +1,11 @@
+#exercício 6 lista variância e desvio padrão
+#o exercício pede a variancia e desvio padrao da *amostra*, veio em distribuição de frequencia
+xi <- c(0, 1, 2, 3, 4)
+fi <- c(30, 5, 3, 1, 1)
+dados <- data.frame(xi,fi)
+dados$fixi <- xi*fi
+media <- sum(dados$fixi)/sum(dados$fi)
+variancia <- round(sum((xi-media)^2*fi)/(sum(fi)-1), digits=2)
+desvioPadrao <- round(sqrt(variancia), digits=2)
+
+#como pediu variancia e desvio padrao da amostra a única mudança foi na linha 8, colocando (sum(fi)-1)
