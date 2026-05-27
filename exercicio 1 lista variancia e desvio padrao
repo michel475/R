@@ -1,0 +1,15 @@
+1° versão
+X <- c(2,3,7,9,11,13)
+variancia <- var(X)*(length(X)-1) / length(X) #variancia populacional
+desvioPadrao <- sqrt(variancia)
+
+#var(X) pega a variância amostral dos dados.
+#usando a fórmula obtém-se a variância populacional
+
+#exercício 1 lista variância e desvio padrão
+2° versão
+X <- c(2,3,7,9,11,13)
+
+#o exercício pede a variancia e desvio padrao populacional
+variancia <- var(X)*(length(X)-1)/length(X)
+desvioPadrao <- sqrt(variancia)
