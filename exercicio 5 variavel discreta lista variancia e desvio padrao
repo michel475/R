@@ -1,0 +1,10 @@
+#exercício 5 lista variância e desvio padrão
+#o exercício pede a variancia e desvio padrao da população, veio em distribuição de frequencia
+xi <- c(17, 18, 19, 20, 21)
+fi <- c(3, 18, 17, 8 ,4)
+dados <- data.frame(xi,fi)
+dados$fixi <- xi*fi
+media <- sum(dados$fixi)/sum(dados$fi)
+variancia <- round(sum((xi-media)^2*fi)/sum(fi), digits=2)
+desvioPadrao <- round(sqrt(variancia), digits=2)
+#por algum motivo o round não arredondou para 1.03 o desvio padrao, tentei usar ceiling mas não rolou também porque tornou dois, o numero ficou 1.02 após o round
