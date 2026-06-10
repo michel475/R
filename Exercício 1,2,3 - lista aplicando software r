@@ -1,0 +1,39 @@
+1)
+dados <- c(35, 26, 39, 25, 39, 22, 42, 40, 30, 22, 21, 40, 16, 32, 39, 21, 50, 39, 18, 37, 23, 15, 27, 44, 30, 32, 21, 15, 26, 43)
+mean(dados)
+median(dados)
+
+#sobre a média: Segundo o conjunto de dados a média de idade dos trabalhadores que solicitaram seguro desemprego é de 30 anos
+#sobre a mediana: 50% dos valores no conjunto de idades são menores ou iguals à 30 e 50% são maiores ou iguais à 30
+
+2)
+
+dados2 <- c(290, 321, 308, 213, 318, 302, 358, 286, 393, 398,
+            352, 235, 329, 333, 409, 351, 325, 458, 314, 181,
+            396, 340, 356, 369, 281, 386, 334, 331, 348, 339,
+            321, 415, 327, 377, 344, 209, 327, 245, 297, 355)
+
+#media
+mean(dados2)
+#mediana
+median(dados2)
+#separatrizes
+quantile(dados2, 0.25)
+quantile(dados2, 0.5)
+quantile(dados2, 0.75)
+#desvio padrao
+sd(dados2)
+
+hist(dados2)
+
+3)
+
+dados3 <- c(2114,2468,7119,1876,4105,3183,1932,1355,4278,1030,2000,1077,5835,1512,1697,2478,3981,1643,1858,1500,4608,1000)
+
+hist(dados3)
+
+#classe de maior frequencia
+#1000 - 2000 (classe 1)
+
+#classe de menor frequencia
+#6000 - 7000 (classe 6)
