@@ -84,7 +84,7 @@ boxplot(dados4)
 
 
 ----- lista 2 ------
-1)
+21)
 x <- c(16,25,39,45,49,64,70,29,57,22)
 y <- c(109,122,143,132,199,185,199,130,175,118)
 
@@ -99,7 +99,7 @@ cor(x,y, method="pearson")
 #correlação forte e positiva, conforme o avanço da idade maior é a pressão sanguínea sistólica
 
 
-3)
+23)
 
 x<-c(175,180,155,210,150,190,185,160,190,180,160,170)
 y<-c(1.80,1.77,2.05,1.42,2.04,1.61,1.70,1.91,1.60,1.63,1.98,1.90)
@@ -114,4 +114,17 @@ cor(x,y, method="pearson")
 #correlação forte e negativa, quanto maior for o peso máximo
 #que o jogador consegue realizar agachamento menor é o tempo que ele gasta na arrancada de 10m
 
+25)
+
+x<-c(2.79,5.10,4.53,3.06,3.70,2.20)
+y<-c(0.52,2.40,1.46,0.88,1.04,0.22)
+frame <- data.frame(x,y)
+frame
+plot(frame)
+
+mod <- lm(frame$y ~ frame$x, frame)
+round(cor(x,y, method="pearson"), 3)
+
+#correlação de 0.9665903 ou 0.967
+#correlação forte e positiva, quanto maior for o lucro por ação maior será o valor do dividendo da mesma
 
