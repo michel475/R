@@ -81,3 +81,22 @@ sd(dados4)
 
 hist(dados4)
 boxplot(dados4)
+
+
+----- lista 2 ------
+1)
+x <- c(16,25,39,45,49,64,70,29,57,22)
+y <- c(109,122,143,132,199,185,199,130,175,118)
+
+data <- data.frame(x,y)
+
+plot(data)
+
+model <- lm(data$y ~ data$x, data)
+cor(x,y, method="pearson")
+
+#correlação de 0.9083862
+#correlação forte e positiva, conforme o avanço da idade maior é a pressão sanguínea sistólica
+
+
+2)
