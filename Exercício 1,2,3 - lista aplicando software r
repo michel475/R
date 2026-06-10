@@ -99,4 +99,19 @@ cor(x,y, method="pearson")
 #correlação forte e positiva, conforme o avanço da idade maior é a pressão sanguínea sistólica
 
 
-2)
+3)
+
+x<-c(175,180,155,210,150,190,185,160,190,180,160,170)
+y<-c(1.80,1.77,2.05,1.42,2.04,1.61,1.70,1.91,1.60,1.63,1.98,1.90)
+frame <- data.frame(x,y)
+frame
+plot(frame)
+
+mod <- lm(frame$y ~ frame$x, frame)
+cor(x,y, method="pearson")
+
+#correlação de -0.9745954
+#correlação forte e negativa, quanto maior for o peso máximo
+#que o jogador consegue realizar agachamento menor é o tempo que ele gasta na arrancada de 10m
+
+
