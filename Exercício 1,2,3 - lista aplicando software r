@@ -188,3 +188,34 @@ valor
 #d) x = 4.5, y = 71
 
 
+3)
+
+x<-c(150,170,120,120,90,180,170,140,90,110)
+y<-c(420,470,350,360,270,550,530,460,380,330)
+
+dados <- data.frame(x,y)
+plot(dados)
+
+modelo <- lm(dados$y ~ dados$x, dados)
+coefficients(modelo)
+
+#y = 80.813 + 2.472x
+
+#previsões
+
+valor = 80.813 + 2.472*170
+valor
+#a) x = 170, y = 501.053
+
+
+valor = 80.813 + 2.472*100
+valor
+#b) x = 100, y = 328.013
+
+
+valor = 80.813 + 2.472*140
+valor
+#c)  x = 140, y = 426.893
+
+
+#d)Não é adequado prever y para x = 210 pois esse valor está fora do intervalo observado
