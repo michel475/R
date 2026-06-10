@@ -37,3 +37,47 @@ hist(dados3)
 
 #classe de menor frequencia
 #6000 - 7000 (classe 6)
+
+
+4)
+
+dados4 <- c(91,472,279,249,530,376,188,341,266,199,142,273,189,130,489,266,248,101,375,486,190,398,188,269,43,30,127,354,84)
+
+#media
+mean(dados4)
+
+#mediana
+median(dados4)
+
+#desvio padrao
+sd(dados4)
+
+#interpretações
+#A quantia gasta em dólares no semestre foi em média $254.24
+
+#50% dos valores são menores ou iguais à 249 e 50% maiores ou iguais à 249
+
+#Os dados se afastam da média em 138.8498 unidades
+
+5)
+
+dados4 <- c(91,472,279,249,530,376,188,341,266,199,142,273,189,130,489,266,248,101,375,486,190,398,188,269,43,30,127,354,84)
+
+#media
+mean(dados4)
+
+#mediana
+median(dados4)
+
+#desvio padrao
+sd(dados4)
+
+#interpretações
+#A quantia gasta em dólares no semestre foi em média $254.24
+
+#50% dos valores são menores ou iguais à 249 e 50% maiores ou iguais à 249
+
+#Os dados se afastam da média em 138.8498 unidades
+
+hist(dados4)
+boxplot(dados4)
