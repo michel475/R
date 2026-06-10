@@ -128,3 +128,33 @@ round(cor(x,y, method="pearson"), 3)
 #correlação de 0.9665903 ou 0.967
 #correlação forte e positiva, quanto maior for o lucro por ação maior será o valor do dividendo da mesma
 
+
+1)
+
+x<-c(869,820,771,696,692,676,656,492,486)
+y<-c(60,50,50,52,40,47,41,39,26)
+
+dados <- data.frame(x,y)
+plot(dados)
+
+modelo <- lm(dados$y ~ dados$x, dados)
+coefficients(modelo)
+
+#y = 0.46521207 + 0.06508819x
+
+#previsões
+
+valor = 0.465 + 0.065*800
+valor
+#a) x = 800, y = 52 andares
+
+
+valor = 0.465 + 0.065*750
+valor
+#b) x = 750, y = 49 andares
+
+#400 não faz parte do intervalo observado, portanto não é adequado prever y
+
+
+
+
